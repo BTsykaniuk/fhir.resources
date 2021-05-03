@@ -22,7 +22,7 @@ class HumanName(Element):
 
     resource_type = Field("HumanName", const=True)
 
-    family: ListType[fhirtypes.String] = Field(
+    family: fhirtypes.String = Field(
         None,
         alias="family",
         title="Type `String` (represented as `dict` in JSON)",
